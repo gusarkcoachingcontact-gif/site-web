@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+  <title>Mentions légales • Confidentialité • RGPD | Gusark Coaching</title>
+  <meta
+    name="description"
+    content="Mentions légales, politique de confidentialité et informations RGPD du site Gusark Coaching."
+  />
+
+  <style>
+    :root {
+      --color-primary: #111111;
+      --color-secondary: #f0cc1a;
+      --color-text: #f5f5f5;
+      --color-muted: rgba(245, 245, 245, 0.78);
+      --color-border: rgba(240, 204, 26, 0.22);
+      --color-card: rgba(17, 17, 17, 0.78);
+      --color-card-strong: rgba(17, 17, 17, 0.9);
+      --color-highlight: rgba(240, 204, 26, 0.08);
+      --shadow-soft:
+        0 0 12px rgba(255, 204, 0, 0.12),
+        0 0 24px rgba(255, 204, 0, 0.08);
+      --radius: 1.2rem;
+      --max-width: 70rem;
+      --linear-yellow: linear-gradient(135deg, #ffdd55 0%, #f0cc1a 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--color-text);
+      background:
+        radial-gradient(circle at top, rgba(240, 204, 26, 0.08), transparent 30%),
+        linear-gradient(180deg, #111111 0%, #0b0b0b 100%);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--color-secondary);
+      text-decoration: none;
+      transition: color 0.2s ease, opacity 0.2s ease;
+    }
+
+    a:hover,
+    a:focus {
+      opacity: 0.85;
+      text-decoration: underline;
+    }
+
+    .legal-page {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin: 0 auto;
+      padding: 2rem 0 4rem;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .legal-hero {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(4px);
+      box-shadow: var(--shadow-soft);
+      padding: clamp(1.4rem, 1rem + 1.2vw, 2.4rem);
+      margin-bottom: 1.5rem;
+    }
+
+    .legal-hero h1 {
+      font-size: clamp(2rem, 1.45rem + 2vw, 3.2rem);
+      line-height: 1.1;
+      margin-bottom: 0.9rem;
+    }
+
+    .legal-hero p {
+      color: var(--color-muted);
+      max-width: 52rem;
+    }
+
+    .legal-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1.4rem;
+    }
+
+    .legal-nav a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.72rem 1rem;
+      border: 1px solid var(--color-border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .legal-nav a:hover,
+    .legal-nav a:focus {
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .legal-section {
+      background: var(--color-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(4px);
+      box-shadow: var(--shadow-soft);
+      padding: clamp(1.4rem, 1rem + 1.2vw, 2rem);
+      margin-top: 1.25rem;
+    }
+
+    .legal-section h2 {
+      color: var(--color-secondary);
+      font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem);
+      margin-bottom: 1rem;
+    }
+
+    .legal-section h3 {
+      font-size: 1.08rem;
+      margin-top: 1.35rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .legal-section p,
+    .legal-section li {
+      color: var(--color-muted);
+    }
+
+    .legal-section ul {
+      margin: 0.6rem 0 0 1.2rem;
+    }
+
+    .legal-section strong {
+      color: var(--color-text);
+    }
+
+    .legal-note {
+      margin-top: 1.1rem;
+      padding: 1rem 1.1rem;
+      border-left: 4px solid var(--color-secondary);
+      border-radius: 0.8rem;
+      background: var(--color-highlight);
+      color: var(--color-text);
+    }
+
+    .mini-mention {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 0.9rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(240, 204, 26, 0.14);
+      font-size: 0.96rem;
+    }
+
+    .legal-footer {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(240, 204, 26, 0.12);
+      text-align: center;
+      color: rgba(245, 245, 245, 0.62);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .legal-page {
+        width: min(calc(100% - 1rem), var(--max-width));
+        padding-top: 1rem;
+      }
+
+      .legal-nav {
+        flex-direction: column;
+      }
+
+      .legal-nav a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="legal-page">
+    <a class="back-link" href="index.html">← Retour au site</a>
+
+    <header class="legal-hero">
+      <h1>Mentions légales, confidentialité et RGPD</h1>
+      <p>
+        Cette page regroupe les informations légales du site
+        <strong>Gusark Coaching</strong>, ainsi que les informations relatives
+        au traitement des données personnelles transmises via le formulaire de contact.
+      </p>
+
+      <nav class="legal-nav" aria-label="Navigation interne">
+        <a href="#mentions-legales">Mentions légales</a>
+        <a href="#politique-confidentialite">Politique de confidentialité</a>
+        <a href="#rgpd">Informations RGPD</a>
+      </nav>
+    </header>
+
+    <section class="legal-section" id="mentions-legales">
+      <h2>1. Mentions légales</h2>
+
+      <h3>Éditeur du site</h3>
+      <p>
+        Le présent site est édité par :
+        <strong>Arthur Gras</strong><br>
+        Nom commercial : <strong>Gusark Coaching</strong><br>
+        Statut : <strong>Auto-entrepreneur</strong><br>
+        Adresse e-mail : <strong>gusarkcoaching.contact@gmail.com</strong>
+      </p>
+
+      <h3>Directeur de la publication</h3>
+      <p>
+        Le directeur de la publication est :
+        <strong>Arthur Gras</strong>.
+      </p>
+
+      <h3>Hébergement</h3>
+      <p>
+        Le site est hébergé par :
+        <strong>À compléter</strong><br>
+        Adresse de l’hébergeur :
+        <strong>À compléter</strong><br>
+        Site web :
+        <strong>À compléter</strong>
+      </p>
+
+
+      <h3>Propriété intellectuelle</h3>
+      <p>
+        L’ensemble des contenus présents sur ce site, notamment les textes, visuels,
+        images, éléments graphiques, logos, icônes, vidéos, ainsi que leur mise en forme,
+        sont protégés par les règles applicables en matière de propriété intellectuelle.
+      </p>
+      <p>
+        Sauf mention contraire, ces contenus sont la propriété exclusive de
+        <strong>Gusark Coaching</strong>. Toute reproduction, représentation, adaptation,
+        publication ou exploitation, totale ou partielle, sans autorisation écrite
+        préalable, est interdite.
+      </p>
+
+      <h3>Responsabilité</h3>
+      <p>
+        L’éditeur s’efforce de fournir sur ce site des informations aussi précises
+        que possible. Toutefois, il ne pourra être tenu responsable des omissions,
+        inexactitudes ou carences dans la mise à jour, qu’elles soient de son fait
+        ou du fait de tiers partenaires.
+      </p>
+
+      <h3>Liens externes</h3>
+      <p>
+        Le site peut contenir des liens vers des sites tiers, notamment pour la prise
+        de rendez-vous ou les réseaux sociaux. L’éditeur n’exerce aucun contrôle sur
+        ces sites et décline toute responsabilité quant à leur contenu ou à leurs pratiques.
+      </p>
+    </section>
+
+    <section class="legal-section" id="politique-confidentialite">
+      <h2>2. Politique de confidentialité</h2>
+
+      <h3>Données collectées</h3>
+      <p>
+        Lors de l’utilisation du formulaire de contact, les données suivantes
+        peuvent être collectées :
+      </p>
+      <ul>
+        <li>nom ;</li>
+        <li>adresse e-mail ;</li>
+        <li>objectif principal ;</li>
+        <li>niveau d’entraînement ;</li>
+        <li>message librement rédigé par l’utilisateur.</li>
+      </ul>
+
+      <h3>Finalités du traitement</h3>
+      <p>
+        Ces données sont collectées uniquement afin de :
+      </p>
+      <ul>
+        <li>répondre aux demandes envoyées via le formulaire de contact ;</li>
+        <li>échanger avec la personne concernée à propos d’un accompagnement ;</li>
+        <li>assurer le suivi des demandes entrantes.</li>
+      </ul>
+
+      <h3>Base légale</h3>
+      <p>
+        Le traitement repose sur l’exécution de mesures précontractuelles prises à
+        la demande de la personne concernée, lorsqu’elle contacte
+        <strong>Gusark Coaching</strong> pour obtenir des informations ou envisager
+        une prestation.
+      </p>
+
+      <h3>Destinataires des données</h3>
+      <p>
+        Les données sont destinées exclusivement à
+        <strong>Arthur Gras – Gusark Coaching</strong>.
+        Elles ne sont ni vendues, ni cédées à des tiers à des fins commerciales.
+      </p>
+
+      <h3>Service de formulaire utilisé</h3>
+      <p>
+        Les demandes envoyées depuis le formulaire de contact sont transmises via
+        un service tiers de traitement de formulaires en ligne,
+        <strong>FormSubmit</strong> (<strong>formsubmit.co</strong>),
+        afin d’acheminer les messages vers l’adresse de contact du site.
+      </p>
+      <p>
+        En utilisant le formulaire, l’utilisateur reconnaît que ses données peuvent
+        transiter par ce prestataire technique, dans la stricte limite du traitement
+        de sa demande.
+      </p>
+
+      <h3>Durée de conservation</h3>
+      <p>
+        Les données sont conservées pendant la durée strictement nécessaire au
+        traitement de la demande, puis supprimées ou archivées de manière sécurisée.
+        À titre indicatif, les demandes restées sans suite peuvent être conservées
+        pendant une durée maximale de <strong>12 mois</strong>.
+      </p>
+
+      <h3>Sécurité</h3>
+      <p>
+        L’éditeur met en œuvre des mesures raisonnables afin de protéger les données
+        personnelles contre l’accès non autorisé, la perte, l’altération ou la divulgation.
+      </p>
+
+      <h3>Cookies et traceurs</h3>
+      <p>
+        À la connaissance de l’éditeur, ce site vitrine ne dépose pas de cookies
+        publicitaires ou de traceurs marketing nécessitant un consentement préalable.
+      </p>
+    </section>
+
+    <section class="legal-section" id="rgpd">
+      <h2>3. Informations RGPD</h2>
+
+      <h3>Responsable du traitement</h3>
+      <p>
+        Le responsable du traitement est :
+        <strong>Arthur Gras – Gusark Coaching</strong><br>
+        Contact :
+        <strong>gusarkcoaching.contact@gmail.com</strong>
+      </p>
+
+      <h3>Droits des personnes</h3>
+      <p>
+        Conformément à la réglementation applicable en matière de protection des données
+        personnelles, toute personne concernée dispose notamment des droits suivants :
+      </p>
+      <ul>
+        <li>droit d’accès ;</li>
+        <li>droit de rectification ;</li>
+        <li>droit à l’effacement ;</li>
+        <li>droit à la limitation du traitement ;</li>
+        <li>droit d’opposition ;</li>
+        <li>droit à la portabilité, lorsque ce droit est applicable.</li>
+      </ul>
+
+      <h3>Exercice des droits</h3>
+      <p>
+        Ces droits peuvent être exercés à tout moment en adressant une demande à :
+        <strong>gusarkcoaching.contact@gmail.com</strong>.
+      </p>
+      <p>
+        Pour des raisons de sécurité, une preuve d’identité pourra être demandée
+        en cas de doute raisonnable sur l’identité du demandeur.
+      </p>
+
+      <h3>Délai de réponse</h3>
+      <p>
+        Les demandes relatives aux données personnelles sont traitées dans les meilleurs
+        délais et, en principe, dans un délai maximal d’un mois à compter de leur réception.
+      </p>
+
+      <h3>Réclamation</h3>
+      <p>
+        Si une personne estime que ses droits ne sont pas respectés, elle peut introduire
+        une réclamation auprès de la CNIL.
+      </p>
+
+      <h3>Transfert éventuel hors Union européenne</h3>
+      <p>
+        Le site utilise un service tiers de transmission de formulaires.
+        Selon l’infrastructure technique réelle de ce prestataire, certaines données
+        pourraient être traitées ou hébergées en dehors de l’Union européenne.
+      </p>
+      <p>
+        En cas de doute, il convient de vérifier les conditions de traitement et
+        la politique de confidentialité du prestataire utilisé.
+      </p>
+    </section>
+
+    <footer class="legal-footer">
+      <p>Dernière mise à jour : 19 mars 2026</p>
+    </footer>
+  </main>
+</body>
+</html>

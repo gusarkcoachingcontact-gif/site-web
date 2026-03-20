@@ -1,0 +1,27 @@
+
+// colors :
+$color-primary : #000;
+$color-secondary : #f0cb1a;
+$color-text : #ffffff;
+$shadow: 0 10px 20px rgba(0, 0, 0, .35);
+$shadow-soft: 0 8px 16px rgba(0, 0, 0, .25);
+$linear-yellow:linear-gradient(135deg, #ffcc00f6 0%, #ffcc00d7 100%);
+
+
+// polices :
+
+$family-text:'Barlow', sans-serif;
+$family-title:'Oswald', sans-serif;
+
+
+
+/* Font-size */
+$font-title-primary:clamp(2.6rem, -0.543rem + 8.381vw, 7rem);
+$font-title-primary-bis:clamp(2.25rem, -0.5rem + 7.333vw, 6.1rem);
+$font-title-secondary:clamp(1.5rem, 0.429rem + 2.857vw, 3rem);
+$font-header:clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+$font-h3:clamp(1.4rem, 1.329rem + 0.19vw, 1.5rem);
+$font-h4:clamp(1.1rem, 0.886rem + 0.571vw, 1.4rem);
+$font-text:clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+$font-btn:clamp(1rem, 0.821rem + 0.476vw, 1.25rem);
+

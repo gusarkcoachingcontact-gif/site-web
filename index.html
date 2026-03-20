@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUSARK COACHING — Coaching en ligne musculation, recomposition, perte de graisse</title>
   <meta name="description" content="Coaching premium en ligne pour transformer ton physique sans sacrifier ta vie. Audit complet, plan personnalisé, suivi hebdomadaire. Réserve ton appel découverte.">
   <meta property="og:title" content="GUSARK COACHING">
@@ -10,257 +10,416 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="/">
   <meta property="og:image" content="">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=141">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  
+  
 </head>
 <body>
   <a class="skip-link" href="#main">Aller au contenu</a>
-  <main id="main">
-    <section id="hero" class="section hero">
-      <button class="nav-toggle" aria-expanded="false">Menu</button>
-      <img class="logo-hero" src="Logo%20GUSARK.png?v=2" alt="Logo GUSARK Coaching" onerror="this.src='GUSARK.PNG?v=2'">
-      <div class="container hero-inner">
-          <div class="hero-text">
-            <h1>Transforme ton physique</h1>
-            <p class="subtitle-block">Coaching adapté à ta morphologie et ton train de vie</p>
-            <div class="hero-ctas">
-              <a class="btn btn-primary" href="https://calendly.com/gusarkcoaching-contact/30min" target="_blank" rel="noopener">Réserver un appel</a>
-              <a class="btn btn-secondary" href="#offers">Voir les offres</a>
-            </div>
-          </div>
+
+  <div class="hero-wrapper">
+    <header>
+      <a class="img-header" href="index.html">
+        <img src="./images/Logo_GUSARK.png" alt="logo de l'entreprise">
+      </a>
+      <div class="menu">
+        <a class="a-menu" href="#presentation">Présentation</a>
+        <a class="a-menu" href="#methode">Méthode</a>
+        <a class="a-menu" href="#offres">Offres</a>
+        <a class="a-menu" href="#formulaire">Contact</a>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>
+        <span class="line1">Transforme</span>
+        <span class="line2">ton physique</span>
+      </h1>
+      <h4 class="h4-title">Coaching adapté à ta morphologie et ton train de vie
+      </h4>
+
+      <div class="btn-holder">
+        <a class="btn appel-btn" href="https://calendly.com/gusarkcoaching-contact/30min" target="_blank" rel="noopener">Réserver un appel</a>
+        <a class="btn offres-btn" href="#offres">Voir les offres</a>
       </div>
     </section>
-    <section id="social-proof" class="section social-proof">
-      <div class="container">
-        <h2>Retours clients</h2>
-        <div class="testimonials">
-          <article class="card t-card">
-            <p>“J’ai enfin brisé mon plateau, avec une structure et des objectifs clairs.”</p>
-            <div class="author">Alex</div>
-          </article>
-          <article class="card t-card">
-            <p>“-8 kg en 12 semaines, sans extrêmes. Suivi précis, méthode durable.”</p>
-            <div class="author">Maya</div>
-          </article>
-          <article class="card t-card">
-            <p>“Plan nutrition + entraînement simple à appliquer, résultats visibles rapidement.”</p>
-            <div class="author">Sam</div>
-          </article>
+  </div>
+
+  <main>
+    <section class="presentation">
+      <h2 id="presentation">À qui s’adresse <span class="yellow">GUSARK</span> ?</h2>
+      <div class="support-items-presentation">
+        <div class="item-presentation">
+          <h3>Gras résiduel malgré l’entraînement</h3>
+          <p>Tu t’entraînes déjà, mais ce gras tenace reste. On ajuste stratégie et rythme pour relancer des progrès visibles.</p>
+        </div>
+        <div class="item-presentation">
+          <h3>Plateau physique</h3>
+          <p>Tu stagnes depuis des mois. On clarifie tes variables et on relance une progression mesurable dans tes séances.</p>
+        </div>
+        <div class="item-presentation">
+          <h3>Manque de structure claire</h3>
+          <p>Tu fais “au feeling”. On te donne un plan simple, mesurable, qui tient dans ta vie.</p>
+        </div>
+        <div class="item-presentation">
+          <h3>Régimes yo-yo et frustration</h3>
+          <p>Stop aux extrêmes. On installe une routine réaliste qui crée des résultats durables.</p>
         </div>
       </div>
     </section>
-    <section id="about" class="section about">
-      <div class="container">
-        <h2>Qui je suis</h2>
-        <p>Coach en musculation et recomposition corporelle, j’aide à <span class="highlight">transformer</span> ton physique sans sacrifier ta vie, grâce à une méthode <span class="highlight">claire</span> et un suivi <span class="highlight">personnalisé</span>.</p>
-        <p>Mon approche privilégie la simplicité d’exécution, <span class="highlight">l’adaptation</span> à ton emploi du temps et des résultats <span class="highlight">durables</span>, loin des méthodes extrêmes.</p>
-        <p><span class="highlight">Passionné</span> de musculation, je me suis formé en <span class="highlight">anatomie</span> et j’ai suivi une formation en <span class="highlight">BTS diététique</span>.</p>
-      </div>
+
+
+    <div class="section-separator"></div>
+
+
+
+    <section class="presentation-2">
+      <h2>Qui suis-je ?</h2>
+      <p>
+      Coach en musculation et recomposition corporelle, j’aide à 
+      <span class="yellow-text">transformer</span> ton physique sans sacrifier ta vie,
+      grâce à une méthode <span class="yellow-text">claire</span> et un suivi
+      <span class="yellow-text">personnalisé</span>.
+      </p>
+      <br>
+      <p>
+      Mon approche privilégie la simplicité d’exécution,
+      <span class="yellow-text">l’adaptation</span> à ton emploi du temps
+      et des résultats <span class="yellow-text">durables</span>,
+      loin des méthodes extrêmes.
+      </p>
+      <br>
+      <p>
+      <span class="yellow-text">Passionné</span> de musculation depuis plusieurs années,
+      je me suis formé en <span class="yellow-text">anatomie</span> et en
+      <span class="yellow-text">nutrition</span>, notamment à travers une formation
+      en <span class="yellow-text">BTS diététique</span>.
+      </p>
     </section>
-    <section id="audience" class="section audience">
-      <div class="container">
-        <h2>À qui s’adresse <span class="glow-gusark">GUSARK</span></h2>
-        <div class="grid cards">
-          <article class="card">
-            <h3>Gras résiduel malgré l’entraînement</h3>
-            <p>Tu t’entraînes déjà mais ce gras tenace reste. On ajuste stratégie et rythme pour des progrès visibles.</p>
-          </article>
-          <article class="card">
-            <h3>Plateau physique</h3>
-            <p>Tu stagnes depuis des mois. On clarifie tes variables et on remet du momentum dans tes séances.</p>
-          </article>
-          <article class="card">
-            <h3>Manque de structure claire</h3>
-            <p>Tu fais “au feeling”. On te donne un plan simple, mesurable, qui tient dans ta vie.</p>
-          </article>
-          <article class="card">
-            <h3>Yo-yo dieting / frustration</h3>
-            <p>Stop aux extrêmes. On installe une routine réaliste qui crée des résultats durables.</p>
-          </article>
+
+
+
+    <div class="section-separator"></div>
+
+
+    <section class="methode">
+      <h2 id="methode">La méthode <span class="yellow">GUSARK</span></h2>
+      <div class="support-items-methode">
+        <div class="item-methode">
+          <div class="numero-methode">1</div>
+          <h3>Audit complet</h3>
+          <p>Physique, habitudes, objectifs, contraintes. On comprend ta réalité avant d’optimiser.</p>
+          <li>Check-ins réguliers</li>
+          <li>Priorité santé et long terme</li>
+        </div>
+        <div class="item-methode">
+          <div class="numero-methode">2</div>
+          <h3>Plan personnalisé</h3>
+          <p>Nutrition et entraînement sur mesure. Simplicité d’exécution. Adapté à ta semaine.</p>
+          <li>Adaptation continue</li>
+          <li>Indicateurs suivis</li>
+        </div>
+        <div class="item-methode">
+          <div class="numero-methode">3
+          </div>
+          <h3>Suivi et ajustements</h3>
+          <p>Hebdomadaire, précis, orienté vers les résultats. Ajustements en fonction de tes retours.</p>
+          <li>Feedbacks concrets</li>
+          <li>Progrès mesurables</li>
         </div>
       </div>
     </section>
-    <section id="method" class="section method">
-      <div class="container">
-        <h2>La méthode <span class="glow-gusark">GUSARK</span></h2>
-        <div class="steps">
-          <div class="step">
-            <div class="step-index">01</div>
-            <h3>Audit complet</h3>
-            <p>Physique, habitudes, objectifs, contraintes. On comprend ta réalité avant d’optimiser.</p>
-            <ul class="bullets">
-              <li>Check-ins réguliers</li>
-              <li>Priorité santé et long terme</li>
-            </ul>
-          </div>
-          <div class="step">
-            <div class="step-index">02</div>
-            <h3>Plan personnalisé</h3>
-            <p>Nutrition et entraînement sur mesure. Simplicité d’exécution. Adapté à ta semaine.</p>
-            <ul class="bullets">
-              <li>Adaptation continue</li>
-              <li>Indicateurs suivis</li>
-            </ul>
-          </div>
-          <div class="step">
-            <div class="step-index">03</div>
-            <h3>Suivi et ajustements</h3>
-            <p>Hebdomadaire, précis, orienté vers les résultats. Ajustements en fonction de tes retours.</p>
-            <ul class="bullets">
-              <li>Feedbacks concrets</li>
-              <li>Progrès mesurables</li>
-            </ul>
-          </div>
+
+
+    <div class="section-separator"></div>
+
+
+
+    <section class="offres">
+      <h2 id="offres">Les offres de coaching</h2>
+      <div class="support-items-offres">
+        <div class="item-offres">
+          <div class="preferee">Parfaite pour débuter&nbsp;!</div>
+          <h3>Starter</h3>
+          <li>Programme fixe non évolutif</li>
+          <li>Conseils alimentaires</li>
+          <h4 class="prix">60€ (paiement unique)</h4>
+          <a href="#formulaire" class="btn appel-btn">Souscrire</a>
+        </div>
+        <div class="item-offres" id="preferee-yellow">
+          <div class="preferee">La préférée des sportifs&nbsp;!</div>
+          <h3>Standard</h3>
+          <li>Programme évolutif</li>
+          <li>Vidéos de correction</li>
+          <li>Bilans bimensuels</li>
+          <li>Disponibilité WhatsApp 7 j/7</li>
+          <h4 class="prix">80€/mois</h4>
+          <a href="#formulaire" class="btn offres-btn">Souscrire</a>
+        </div>
+        <div class="item-offres">
+          <div class="preferee">La plus complète&nbsp;!</div>
+          <h3>Premium</h3>
+          <li>Programme évolutif</li>
+          <li>Vidéos de correction</li>
+          <li>Plan alimentaire évolutif</li>
+          <li>Bilans hebdomadaires</li>
+          <li>Disponibilité WhatsApp 7 j/7</li>
+          <h4 class="prix">100€/mois</h4>
+          <a href="#formulaire" class="btn appel-btn">Souscrire</a>
         </div>
       </div>
     </section>
-    <section id="offers" class="section offers">
-      <div class="container">
-        <h2>Offres de coaching</h2>
-        <div class="grid offers-grid">
-          <article class="card offer">
-            <h3>Starter</h3>
-            <ul class="included">
-              <li>Programme fixe non évolutif</li>
-              <li>Conseils alimentaires</li>
-            </ul>
-            <div class="price">40 €</div>
-            <a class="btn btn-primary" href="#cta">Postuler</a>
-          </article>
-          <article class="card offer featured">
-            <div class="badge">Le plus choisi</div>
-            <h3>Standard</h3>
-            <ul class="included">
-              <li>Programme évolutif</li>
-              <li>Vidéos de correction</li>
-              <li>Bilans hebdomadaires</li>
-              <li>Disponibilité WhatsApp 7 j/7</li>
-            </ul>
-            <div class="price">60 €</div>
-            <a class="btn btn-primary" href="#cta">Postuler</a>
-          </article>
-          <article class="card offer">
-            <h3>Premium</h3>
-            <ul class="included">
-              <li>Programme évolutif</li>
-              <li>Vidéos de correction</li>
-              <li>Plan alimentaire évolutif</li>
-              <li>Bilans hebdomadaires</li>
-              <li>Disponibilité WhatsApp 7 j/7</li>
-            </ul>
-            <div class="price">80 €</div>
-            <a class="btn btn-primary" href="#cta">Postuler</a>
-          </article>
+
+
+
+    <div class="section-separator"></div>
+
+    <section class="temoignages">
+      <h2>Ce que la méthode <span class="yellow">GUSARK</span> a changé pour eux</h2>
+      <div class="slider">
+        <div class="slides">
+          <img src="./images/témoignage-1.PNG" class="slide active" alt="">
+          <img src="./images/témoignage-2.PNG" class="slide" alt="">
+          <img src="./images/témoignage-3.PNG" class="slide" alt="">
+          <img src="./images/témoignage-4.JPG" class="slide" alt="">
         </div>
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
       </div>
     </section>
-    <section id="faq" class="section faq section-logo">
-      <div class="container">
-        <h2>FAQ</h2>
-        <div class="accordion" role="tablist">
-          <details>
-            <summary>Est-ce adapté aux débutants ?</summary>
-            <p>Oui. La méthode est personnalisée à ton niveau actuel, avec une progression claire.</p>
-          </details>
-          <details>
-            <summary>Combien de temps avant les résultats ?</summary>
-            <p>Les premiers changements arrivent souvent en 4–6 semaines. Les résultats durables se construisent.</p>
-          </details>
-          <details>
-            <summary>Suivi nutrition + training ?</summary>
-            <p>Les deux. Plan alimentaire et programme d’entraînement, ajustés selon tes retours.</p>
-          </details>
-          <details>
-            <summary>Matériel nécessaire ?</summary>
-            <p>Selon ton contexte: salle, home gym, poids du corps. Le plan s’adapte.</p>
-          </details>
-          <details>
-            <summary>Dois-je suivre une diète stricte ?</summary>
-            <p>Non. On privilégie la durabilité et l’adhérence plutôt que les extrêmes.</p>
-          </details>
-          <details>
-            <summary>Comment se passent les check-ins ?</summary>
-            <p>Hebdomadaires, avec indicateurs, photos si souhaité, et plan d’ajustement.</p>
-          </details>
-          <details>
-            <summary>Y a-t-il un nombre de places limité ?</summary>
-            <p>Oui pour garantir la qualité du suivi.</p>
-          </details>
-          <details>
-            <summary>Puis-je arrêter à tout moment ?</summary>
-            <p>Une durée minimale est recommandée pour des résultats tangibles.</p>
-          </details>
-        </div>
+
+    <div class="section-separator"></div>
+
+
+    <section class="faq">
+      <h2 id="faq">Questions fréquentes</h2>
+      <p class="faq-intro">
+        Tout ce qu’il faut savoir avant de rejoindre la méthode <span class="yellow-text">GUSARK</span>.
+      </p>
+
+      <div class="faq-list">
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Est-ce adapté aux débutants ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui. La méthode est adaptée à ton niveau actuel, avec une progression claire, que tu débutes totalement ou que tu aies déjà de l’expérience.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Combien de temps avant les premiers résultats ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Les premiers changements peuvent souvent apparaître en 4 à 6 semaines. Les résultats solides, eux, se construisent avec de la régularité et un cadre adapté.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Le coaching comprend-il la nutrition et l’entraînement ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui. Le suivi repose sur un programme d’entraînement et un accompagnement nutritionnel, ajustés en fonction de tes retours et de ton objectif.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Faut-il du matériel particulier ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Non. Le plan s’adapte à ton contexte : salle, home gym, matériel limité ou travail au poids du corps.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Dois-je suivre une diète stricte ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Non. L’objectif est de construire quelque chose de durable et applicable dans la vraie vie, pas de te bloquer dans une méthode extrême ou frustrante.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Comment se passent les check-ins ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Ils se font de façon régulière, avec suivi des indicateurs, retour sur les sensations, et ajustements si nécessaire pour garder une progression claire.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Y a-t-il un nombre de places limité ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Oui. Le nombre de places reste volontairement limité pour garantir un accompagnement sérieux, précis et personnalisé.
+            </p>
+          </div>
+        </article>
+
+        <article class="faq-item">
+          <button class="faq-question" type="button" aria-expanded="false">
+            <span>Puis-je arrêter à tout moment ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Une durée minimale est recommandée pour obtenir des résultats tangibles. L’idée n’est pas d’aller vite, mais d’obtenir une vraie transformation durable.
+            </p>
+          </div>
+        </article>
+
       </div>
     </section>
-    <section id="cta" class="section cta section-logo">
-      <div class="container">
-        <h2>Prêt à agir maintenant ?</h2>
-        <p>Postule pour un coaching premium. On vérifie ta situation et on voit si on est un bon fit.</p>
-        <form id="contact-form" novalidate data-endpoint="https://formsubmit.co/gusarkcoaching.contact@gmail.com">
-          <div class="form-grid">
-            <div class="form-control">
-              <label for="name">Nom</label>
-              <input id="name" name="name" type="text" autocomplete="name" required>
-            </div>
-            <div class="form-control">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-            </div>
-            <div class="form-control">
-              <label for="goal">Objectif principal</label>
-              <select id="goal" name="goal" required>
-                <option value="">Sélectionner</option>
-                <option value="seche">Sèche</option>
-                <option value="recomposition">Recomposition</option>
-                <option value="prise-de-masse">Prise de masse</option>
-                <option value="autre">Autre</option>
-              </select>
-            </div>
-            <div class="form-control">
-              <label for="level">Niveau d’entraînement</label>
-              <select id="level" name="level" required>
-                <option value="">Sélectionner</option>
-                <option value="debutant">Débutant</option>
-                <option value="intermediaire">Intermédiaire</option>
-                <option value="avance">Avancé</option>
-              </select>
-            </div>
-            <div class="form-control form-full">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <input type="text" name="hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;top:-9999px">
-            <input type="hidden" name="_subject" value="Nouvelle demande coaching GUSARK">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="/">
+
+
+
+    <div class="section-separator"></div>
+
+
+    <section class="contact-form">
+      <h2 id="formulaire">Prêt à agir maintenant ?</h2>
+      <p class="contact-intro">
+        Postule pour un coaching premium. On échange sur ta situation, tes objectifs,
+        et on voit ensemble si la méthode <span class="yellow-text">GUSARK</span> est faite pour toi.
+      </p>
+
+      <div class="contact-card">
+        <form class="form-grid" action="https://formsubmit.co/gusarkcoaching.contact@gmail.com" method="POST">
+
+          <!-- 🔒 Paramètres FormSubmit -->
+          <input type="hidden" name="_subject" value="Nouvelle demande coaching GUSARK">
+          <input type="hidden" name="_captcha" value="false">
+
+          <!-- 🍯 Anti-spam -->
+          <input type="text" name="_honey" style="display:none">
+
+          <!-- Champs -->
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
           </div>
-          <div class="form-actions">
-            <button type="submit" class="btn btn-primary">Envoyer ma demande</button>
-            <a class="btn btn-outline" href="https://calendly.com/gusarkcoaching-contact/30min" target="_blank" rel="noopener">Réserver un appel</a>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
           </div>
-          <p class="form-status" role="status" aria-live="polite"></p>
+
+          <div class="form-group">
+            <label for="objectif">Objectif principal</label>
+            <select id="objectif" name="objectif" required>
+              <option value="">Sélectionner</option>
+              <option value="seche">Sèche</option>
+              <option value="recomposition">Recomposition</option>
+              <option value="prise-masse">Prise de masse</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="niveau">Niveau d’entraînement</label>
+            <select id="niveau" name="niveau" required>
+              <option value="">Sélectionner</option>
+              <option value="debutant">Débutant</option>
+              <option value="intermediaire">Intermédiaire</option>
+              <option value="avance">Avancé</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="6"
+              placeholder="Explique brièvement ta situation, ton objectif, et ce que tu attends du coaching."
+            ></textarea>
+          </div>
+
+          <!-- 🔽 AJOUT RGPD -->
+          <div class="form-rgpd full-width">
+            <p>
+              Les informations recueillies via ce formulaire sont utilisées uniquement pour
+              répondre à votre demande. Elles ne sont jamais transmises à des tiers.
+              <br>
+              Pour en savoir plus, consultez notre
+              <a href="rgpd.html" target="_blank">politique de confidentialité</a>.
+            </p>
+          </div>
+          <div class="form-consent full-width">
+            <label>
+              <input type="checkbox" required>
+              J’accepte que mes données soient utilisées pour être recontacté.
+            </label>
+          </div>
+
+          <div class="form-actions full-width">
+            <button type="submit" class="btn appel-btn">Envoyer ma demande</button>
+            <a href="https://calendly.com/gusarkcoaching-contact/30min" class="btn secondary-btn" target="_blank" rel="noopener">
+              Réserver un appel
+            </a>
+          </div>
+
         </form>
       </div>
     </section>
+
+
   </main>
+
+  <div class="section-separator"></div>
+
+
   <footer class="site-footer">
-    <div class="container footer-inner">
-      <div class="brand">© GUSARK COACHING</div>
-      <ul class="footer-links">
-        <li><a href="#" aria-label="Mentions légales">Mentions légales</a></li>
-        <li><a href="#" aria-label="Politique de confidentialité">Politique de confidentialité</a></li>
-        <li><a href="mailto:contact@gusark-coaching.com" aria-label="Email">Email</a></li>
-        <li><a href="https://calendly.com/gusarkcoaching-contact/30min" target="_blank" rel="noopener" aria-label="Réserver un appel">Réserver un appel</a></li>
-        <li><a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a></li>
-      </ul>
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <a class="a-footer" href="index.html">© <span class="yellow-text">GUSARK COACHING</span></a>
+      </div>
+
+      <nav class="footer-links" aria-label="Liens de pied de page">
+        <a href="#">Portail client</a>
+        <a href="rgpd.html" target="_blank">Mentions légales</a>
+      </nav>
+
+      <div class="footer-contact">
+        <a href="https://calendly.com/gusarkcoaching-contact/30min" target="_blank" rel="noopener">Réserver un appel</a>
+        <a href="https://www.instagram.com/gusark_/" target="_blank" rel="noopener" class="instagram-link">Instagram</a>
+      </div>
+
     </div>
   </footer>
-  <script src="main.js?v=27"></script>
+<script src="./js/script.js"></script>
 </body>
-<style>
-</style>
-</html>
+</html

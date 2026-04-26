@@ -182,10 +182,11 @@
       <h2>Ce que la méthode <span class="yellow">GUSARK</span> a changé pour eux</h2>
       <div class="slider">
         <div class="slides">
-          <img src="./images/témoignage-1.PNG" class="slide active" alt="">
-          <img src="./images/témoignage-2.PNG" class="slide" alt="">
-          <img src="./images/témoignage-3.PNG" class="slide" alt="">
-          <img src="./images/témoignage-4.JPG" class="slide" alt="">
+          <img src="./images/témoignage-1.PNG" class="slide active" alt="témoignage-1">
+          <img src="./images/témoignage-2.PNG" class="slide" alt="témoignage-2">
+          <img src="./images/témoignage-3.PNG" class="slide" alt="témoignage-3">
+          <img src="./images/témoignage-4.JPG" class="slide" alt="témoignage-4">
+          <img src="./images/témoignage-5.jpeg" class="slide" alt="témoignage-5">
         </div>
 
         <button class="prev">&#10094;</button>
@@ -316,82 +317,92 @@
       </p>
 
       <div class="contact-card">
-        <form class="form-grid" action="https://formsubmit.co/gusarkcoaching.contact@gmail.com" method="POST">
+        <div class="contact-flex">
 
-          <!-- 🔒 Paramètres FormSubmit -->
-          <input type="hidden" name="_subject" value="Nouvelle demande coaching GUSARK">
-          <input type="hidden" name="_captcha" value="false">
+          <!-- FORMULAIRE -->
+          <form class="form-grid" action="https://formsubmit.co/gusarkcoaching.contact@gmail.com" method="POST">
 
-          <!-- 🍯 Anti-spam -->
-          <input type="text" name="_honey" style="display:none">
+            <!-- 🔒 Paramètres FormSubmit -->
+            <input type="hidden" name="_subject" value="Nouvelle demande coaching GUSARK">
+            <input type="hidden" name="_captcha" value="false">
 
-          <!-- Champs -->
-          <div class="form-group">
-            <label for="nom">Nom</label>
-            <input type="text" id="nom" name="nom" required>
+            <!-- 🍯 Anti-spam -->
+            <input type="text" name="_honey" style="display:none">
+
+            <!-- Champs -->
+            <div class="form-group">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="objectif">Objectif principal</label>
+              <select id="objectif" name="objectif" required>
+                <option value="">Sélectionner</option>
+                <option value="seche">Sèche</option>
+                <option value="recomposition">Recomposition</option>
+                <option value="prise-masse">Prise de masse</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="niveau">Niveau d’entraînement</label>
+              <select id="niveau" name="niveau" required>
+                <option value="">Sélectionner</option>
+                <option value="debutant">Débutant</option>
+                <option value="intermediaire">Intermédiaire</option>
+                <option value="avance">Avancé</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Explique brièvement ta situation, ton objectif, et ce que tu attends du coaching."
+              ></textarea>
+            </div>
+
+            <!-- 🔽 AJOUT RGPD -->
+            <div class="form-rgpd full-width">
+              <p>
+                Les informations recueillies via ce formulaire sont utilisées uniquement pour
+                répondre à votre demande. Elles ne sont jamais transmises à des tiers.
+                <br>
+                Pour en savoir plus, consultez notre
+                <a href="rgpd.html" target="_blank">politique de confidentialité</a>.
+              </p>
+            </div>
+            <div class="form-consent full-width">
+              <label>
+                <input type="checkbox" required>
+                J’accepte que mes données soient utilisées pour être recontacté.
+              </label>
+            </div>
+
+            <div class="form-actions full-width">
+              <button type="submit" class="btn appel-btn">Envoyer ma demande</button>
+              <a href="https://calendly.com/gusarkcoaching-contact/30min" class="btn secondary-btn" target="_blank" rel="noopener">
+                Réserver un appel
+              </a>
+            </div>
+
+          </form>
+
+          <!-- IMAGE -->
+          <div class="contact-image">
+            <img src="images/coach.webp" alt="Coaching personnalisé">
           </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="objectif">Objectif principal</label>
-            <select id="objectif" name="objectif" required>
-              <option value="">Sélectionner</option>
-              <option value="seche">Sèche</option>
-              <option value="recomposition">Recomposition</option>
-              <option value="prise-masse">Prise de masse</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="niveau">Niveau d’entraînement</label>
-            <select id="niveau" name="niveau" required>
-              <option value="">Sélectionner</option>
-              <option value="debutant">Débutant</option>
-              <option value="intermediaire">Intermédiaire</option>
-              <option value="avance">Avancé</option>
-            </select>
-          </div>
-
-          <div class="form-group full-width">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Explique brièvement ta situation, ton objectif, et ce que tu attends du coaching."
-            ></textarea>
-          </div>
-
-          <!-- 🔽 AJOUT RGPD -->
-          <div class="form-rgpd full-width">
-            <p>
-              Les informations recueillies via ce formulaire sont utilisées uniquement pour
-              répondre à votre demande. Elles ne sont jamais transmises à des tiers.
-              <br>
-              Pour en savoir plus, consultez notre
-              <a href="rgpd.html" target="_blank">politique de confidentialité</a>.
-            </p>
-          </div>
-          <div class="form-consent full-width">
-            <label>
-              <input type="checkbox" required>
-              J’accepte que mes données soient utilisées pour être recontacté.
-            </label>
-          </div>
-
-          <div class="form-actions full-width">
-            <button type="submit" class="btn appel-btn">Envoyer ma demande</button>
-            <a href="https://calendly.com/gusarkcoaching-contact/30min" class="btn secondary-btn" target="_blank" rel="noopener">
-              Réserver un appel
-            </a>
-          </div>
-
-        </form>
+        </div>
       </div>
     </section>
 

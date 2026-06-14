@@ -818,9 +818,12 @@ body {
         h3,
         li,
         h4,
-        .offre-condition,
-        .offre-lien {
+        .offre-condition {
           color: $color-primary;
+        }
+
+        .offre-lien {
+          color: $color-text;
         }
 
         li::marker {

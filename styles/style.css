@@ -649,9 +649,11 @@ body main .offres #preferee-yellow {
 body main .offres #preferee-yellow h3,
 body main .offres #preferee-yellow li,
 body main .offres #preferee-yellow h4,
-body main .offres #preferee-yellow .offre-condition,
-body main .offres #preferee-yellow .offre-lien {
+body main .offres #preferee-yellow .offre-condition {
   color: #000;
+}
+body main .offres #preferee-yellow .offre-lien {
+  color: #ffffff;
 }
 body main .offres #preferee-yellow li::marker {
   color: #ffffff;
